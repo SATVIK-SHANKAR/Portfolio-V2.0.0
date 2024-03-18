@@ -8,3 +8,5 @@ The source code to the 2nd iteration of my personal website.
 * Add a react blog page
 * Typed.Js addition to texts
 * Parallax scroling
+* Sticky Nav-bar
+* White spaces removal
