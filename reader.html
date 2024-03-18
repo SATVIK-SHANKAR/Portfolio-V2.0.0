@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Satvik</title>
+    <title>readers-digest</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&amp;display=block" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +15,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
     <style>
+        .nav-bar{
+            position: relative;
+        }
+        .logo{
+            margin-left: 8rem;
+            font-size: 25px;
+        }
+        .nav-links{
+            margin-left: 50rem;
+        }
+        .footer-text{
+            color: #2B2B2B;
+            font-family: 'Source Code Pro', monospace;
+            font-size: 13px;
+        }
+        .footer-text-hyperlink{
+            color: #2B2B2B;
+            font-family: 'Source Code Pro', monospace;
+            font-size: 13px;
+        }
+        .footer-text-hyperlink:hover{
+            color: #2B2B2B;
+            text-decoration: underline #2B2B2B;
+        }
         .text-top-1{
             font-size: 20px;
             font-weight: 500;
@@ -58,20 +83,6 @@
             font-size: 15px;
             color: #161616;
         }
-        .footer-text{
-            color: #2B2B2B;
-            font-family: 'Source Code Pro', monospace;
-            font-size: 13px;
-        }
-        .footer-text-hyperlink{
-            color: #2B2B2B;
-            font-family: 'Source Code Pro', monospace;
-            font-size: 13px;
-        }
-        .footer-text-hyperlink:hover{
-            color: #2B2B2B;
-            text-decoration: underline #2B2B2B;
-        }
         .gap-check{
             margin-top: -15px;
         }
@@ -81,29 +92,17 @@
         .gap-check-2{
             margin-top: 17px;
         }
+        .text-align{
+            font-size: 45px;
+            font-weight: 600;
+            margin-left: 16rem;
+            margin-top: 5rem;
+        }
     </style>
 </head>
 <body>
-
-    <!-- About section -->
-
-    <section class="top-home">
-        <!-- <div>
-            <img src="./assets/satvikkk.png" alt="" class="img-1">
-        </div> -->
-        <div id="particles-js"></div>
-        <div id="text-top">
-            
-            <p class="text-top-1">HI</p>
-            <h1 class="text-top-2">I'm Satvik</h1>
-            <p class="text-top-3">Hey there, fellow wanderers of the digital cosmos!<br><br><br><br>Welcome to my little corner of the interwebs,<br><br> where bits and bytes mingle with finance and fun.<br><br>I'm Pusruisng a curious concoction of caffeine-fueled <br><br>coding antics and quantitative finance wizardry.<br><br><br><br>My nightmare, Bachelor's in Computer Science.<br><br> I'm on a quest to crack the code of the universe... <br><br>or at least write some really cool Android apps along<br><br> the way.<br><br><br><br>And who knows, together we might just stumble upon the <br><br>next big thing... or at the very least, a good meme or two.<br><br><br><br>Let's geek out and conquer the digital frontier,<br><br> one line of code at a time! Also,<a href="https://twitter.com/shankar_satvik" class="hyperlink-text text-top-3">I tweet sometimes.</a></p>
-        </div>
-        
-    </section>
-
-     <!-- Nav Bar -->
-
     <nav id="desktop-nav" class="nav-bar">
+        <div class="logo"><a href="index.html" class="nav-links-font">Satvik</a></div>
         <div>
             <ul class="nav-links">
                 <li><a href="project.html" class="nav-links-font">Projects</a></li>
@@ -113,39 +112,14 @@
             </ul>
         </div>
     </nav>
-
-    <!-- Project section -->
-    
-    <section class="top-home2">
-        <div id="text-project">
-            <p class="text-project-1">Featured Projects &nbsp;&nbsp;<a href="project.html" class="hyperlink-text text-project-2">See all&nbsp;></a></p>
-            <p class="gap-check">Below are some of the projects I've worked on so far:</p>
+    <section class="readers-page">
+        <div id="text-readers">
+            <p class="text-project-1 text-align">READEME.MD</p>
         </div>
-    </section> 
-
-    <!--blog section -->
-
-    <section class="blog-section">
-        <div id="text-blog">
-            <p class="text-project-3 gap-check-2">console.log(blog)</p>
-        </div>
-    </section> 
-
-    <!--contact section -->
-
-    <section class="contact-section">
-        <div id="text-contact">
-            <p class="text-project-1">Reach Me&nbsp;&nbsp;<a href="project.html" class="hyperlink-text text-project-2">Contact form&nbsp;></a></p>
-            <p class="gap-check text-project-2">I can be found on most social media platforms:</p>
-            <p class="gap-check-1"><a href="https://twitter.com/shankar_satvik" class="hyperlink-text text-project-2">Twitter</a>&nbsp;&nbsp;<a href="https://github.com/SATVIK-SHANKAR" class="hyperlink-text text-project-2">Github</a>&nbsp;&nbsp;<a href="https://www.instagram.com/satvik.io/" class="hyperlink-text text-project-2">Instagram</a>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/satvik-shankar-49b193226/" class="hyperlink-text text-project-2">Linkedin</a>&nbsp;&nbsp;<a href="mailto:satvik.shankar2003@gmail.com" class="hyperlink-text text-project-2">Email</a>&nbsp;&nbsp;<a href="https://open.spotify.com/user/31yw2iay4chu54hj6rrfhleyfnhe" class="hyperlink-text text-project-2">Spotify</a></p>
-        </div>
-    </section> 
-
+    </section>
     <footer><p class="footer-text">&nbsp; &#169; 2024.Satvik Shankar | All Rights Reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
          <a href="reader.html" class="footer-text-hyperlink">Readers Digest</a></p></footer>
-    <script src="particles.js"></script>
-    <script src="app.js"></script>
 </body>
 </html>
