@@ -3,9 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact-form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&amp;display=block" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Inconsolata:wght@200..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <style>
+        .nav-bar{
+            position: relative;
+        }
+        .logo{
+            margin-left: 8rem;
+            font-size: 25px;
+        }
+        .nav-links{
+            margin-left: 50rem;
+        }
+        .footer-text{
+            color: #2B2B2B;
+            font-family: 'Source Code Pro', monospace;
+            font-size: 13px;
+        }
+        .footer-text-hyperlink{
+            color: #2B2B2B;
+            font-family: 'Source Code Pro', monospace;
+            font-size: 13px;
+        }
+        .footer-text-hyperlink:hover{
+            color: #2B2B2B;
+            text-decoration: underline #2B2B2B;
+        }
+        .text-top-1{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .text-top-2{
+            font-size: 30px;
+            font-weight: 500;
+        }
+        .text-top-3{
+            font-weight: 350;
+        }
+        .hyperlink-text{
+            font-weight: 350;
+            color: #DADADA;
+            font-family: 'Source Code Pro', monospace;
+        }
+        .hyperlink-text:hover{
+            color: #DADADA;
+            text-decoration: underline #DADADA;
+        }
+        .text-project-1{
+            font-size: 30px;
+            font-weight: 500;
+            color: #DADADA;
+            font-family: 'Source Code Pro', monospace;
+        }
+        .text-project-2{
+            font-weight: 350;
+            font-size: 15px;
+            color: #DADADA;
+        }
+        .text-project-3{
+            font-size: 30px;
+            font-weight: 500;
+            color: #161616;
+            font-family: 'Source Code Pro', monospace;
+        }
+        .text-project-4{
+            font-weight: 350;
+            font-size: 15px;
+            color: #161616;
+        }
+        .gap-check{
+            margin-top: -15px;
+        }
+        .gap-check-1{
+            margin-top: -15px;
+        }
+        .gap-check-2{
+            margin-top: 17px;
+        }
+        .text-align{
+            font-size: 33px;
+            font-weight: 600;
+            margin-left: 20rem;
+            margin-top: 3rem;
+            font-family: "Almarai", sans-serif;
+        }
+        .text-align-1{
+            font-size: 15px;
+            margin-left: 20rem;
+        }
+        .text-align-2{
+            font-size: 31px;
+            margin-left: 10rem;
+            margin-top: 9rem;
+            font-family: "Almarai", sans-serif;
+            font-weight: 500;
+        }
+        .text-align-3{
+            font-size: 25px;
+            margin-left: 10rem;
+            margin-top: 2.5rem;
+            font-family: "Almarai", sans-serif;
+            font-weight: 550;
+        }
+        .input-field-align{
+            margin-left: 10rem;
+            margin-top: 0.5rem;
+            border-radius: 5px;
+            background-color: #93939367;
+            border: 2px solid var(--light-background);
+            color: #DADADA;
+            padding: 10px;
+            width: calc(100% - 20px);
+        }
+        .input-field-align-btn{
+            margin-left: 10rem;
+            margin-top: 1rem;
+            border-radius: 5px;
+            background-color: #93939367;
+            border: 2px solid var(--light-background);
+            color: #DADADA;
+            padding: 10px 25px;
+            box-shadow: var(--light-card-shadow);
+            transition: 0.2s;
+            width: fit-content;
+        }
+        .input-field-align-btn:hover{
+            background-color: #DADADA;
+            color: #2B2B2B;
+        }
+    </style>
 </head>
 <body>
-    
+    <nav id="desktop-nav" class="nav-bar">
+        <div class="logo"><a href="index.html" class="nav-links-font">Satvik</a></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="project.html" class="nav-links-font">Projects</a></li>
+                <li><a href="#blog" class="nav-links-font">Blog</a></li>
+                <li><a href="contact.html" class="nav-links-font">Contact</a></li>
+                <li><a href="resume.html" class="nav-links-font">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="contact-page">
+        <div id="text-contact">
+            <p class="text-project-1 text-align">Contact Me</p>
+            <p class="gap-check text-align-1">I can be found on most social media platforms:</p><br>
+            <p class="gap-check-1 text-align-1"><a href="https://twitter.com/shankar_satvik" class="hyperlink-text">Twitter</a>&nbsp;&nbsp;<a href="https://github.com/SATVIK-SHANKAR" class="hyperlink-text">Github</a>&nbsp;&nbsp;<a href="https://www.instagram.com/satvik.io/" class="hyperlink-text">Instagram</a>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/satvik-shankar-49b193226/" class="hyperlink-text">Linkedin</a>&nbsp;&nbsp;<a href="mailto:satvik.shankar2003@gmail.com" class="hyperlink-text">Email</a>&nbsp;&nbsp;<a href="https://open.spotify.com/user/31yw2iay4chu54hj6rrfhleyfnhe" class="hyperlink-text">Spotify</a></p>
+            <form action="">
+                <label for="Name" class="text-align-3">Name</label>
+                <input class="input-field-align" type="text" id="Name" placeholder="Enter your name" required>
+                <div class="error-text">Name can't be blank</div>
+                <label for="Email" class="text-align-3">Email-Id</label>
+                <input class="input-field-align" type="email" id="Email" placeholder="Enter your email-id" required>
+                <div class="error-text">Email can't be blank</div>
+                <!-- <label for="Phone" class="text-align-3">Phone.No</label>
+                <input class="input-field-align" type="text" id="Phone" placeholder="Enter your Phone.No" required> -->
+                <label for="message" class="text-align-3">Message</label>
+                <textarea class="input-field-align" id="message"  rows="10" placeholder="Enter your message"></textarea>
+                <div class="error-text">Message can't be blank</div>
+                <button class="input-field-align-btn" type="submit">Send</button>
+            </form>
+        </div>
+        
+    </section>
+
+    <footer><p class="footer-text">&nbsp; &#169; 2024.Satvik Shankar | All Rights Reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <a href="reader.html" class="footer-text-hyperlink">Readers Digest</a></p></footer>
 </body>
 </html>
