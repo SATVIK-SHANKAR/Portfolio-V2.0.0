@@ -119,7 +119,7 @@
             font-family: "Almarai", sans-serif;
             font-weight: 550;
         }
-        .input-field-align{
+        .item{
             margin-left: 10rem;
             margin-top: 0.5rem;
             border-radius: 5px;
@@ -145,12 +145,18 @@
             background-color: #DADADA;
             color: #2B2B2B;
         }
-        /* .error-text{
+        .error-text{
             font-size: 14.5px;
             color: #d93025;
             text-align: left;
             margin: -4px 0 10px;
             display: none;
+        }
+        /* .item.error{
+            border-color: #d93025;
+        }
+        .item.error + .error-text{
+            display: block;
         } */
     </style>
 </head>
@@ -173,18 +179,21 @@
             <p class="gap-check-1 text-align-1"><a href="https://twitter.com/shankar_satvik" class="hyperlink-text" target=”_blank”>Twitter</a>&nbsp;&nbsp;<a href="https://github.com/SATVIK-SHANKAR" class="hyperlink-text" target=”_blank”>Github</a>&nbsp;&nbsp;<a href="https://www.instagram.com/satvik.io/" class="hyperlink-text" target=”_blank”>Instagram</a>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/satvik-shankar-49b193226/" class="hyperlink-text" target=”_blank”>Linkedin</a>&nbsp;&nbsp;<a href="mailto:satvik.shankar2003@gmail.com" class="hyperlink-text" target=”_blank”>Email</a>&nbsp;&nbsp;<a href="https://open.spotify.com/user/31yw2iay4chu54hj6rrfhleyfnhe" class="hyperlink-text" target=”_blank”>Spotify</a></p>
             <form action="">
                 <label for="Name" class="text-align-3">Name</label>
-                <input class="input-field-align" type="text" id="Name" placeholder="Enter your name" required>
+                <input class="item" type="text" id="Name" placeholder="Enter your name" required>
                 <!-- <div class="error-text">Name can't be blank</div> -->
+
                 <label for="Email" class="text-align-3">Email-Id</label>
-                <input class="input-field-align" type="email" id="Email" placeholder="Enter your email-id" required>
+                <input class="item" type="email" id="Email" placeholder="Enter your email-id" required>
                 <!-- <div class="error-text">Email can't be blank</div> -->
-                <!-- <label for="Phone" class="text-align-3">Phone.No</label>
-                <input class="input-field-align" type="text" id="Phone" placeholder="Enter your Phone.No" required> -->
+                
                 <label for="Subject" class="text-align-3">Subject</label>
-                <input class="input-field-align" type="text" id="Subject" placeholder="Enter Subject" required>
+                <input class="item" type="text" id="Subject" placeholder="Enter Subject" required>
+                <!-- <div class="error-text">Subject can't be blank</div> -->
+
                 <label for="message" class="text-align-3">Message</label>
-                <textarea class="input-field-align" id="message"  rows="5" placeholder="Enter your message"></textarea>
+                <textarea class="item" id="message"  rows="5" placeholder="Enter your message"></textarea>
                 <!-- <div class="error-text">Message can't be blank</div> -->
+
                 <button class="input-field-align-btn" type="submit">Send</button>
             </form>
         </div>
@@ -196,6 +205,7 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
          <a href="reader.html" class="footer-text-hyperlink">Readers Digest</a></p></footer>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script.js"></script>
 </body>
 </html>
