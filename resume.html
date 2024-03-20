@@ -122,6 +122,9 @@
             font-weight: 520;
             margin-bottom: 2rem;
         }
+        .pdf-view{
+            margin-left: 14rem;
+        }
     </style>
 </head>
 <body>
@@ -137,7 +140,23 @@
         </div>
     </nav>
 
-    <section></section>
+    <section class="resume-page">
+        <div>
+            <!-- <embed src="./assets/SATVIK_RESUME.pdf#toolbar=0" height="1100" width="1000"> -->
+        </div>
+        <div id="viewer" style="width: 1000px; height: 70rem;" class="pdf-view"></div>
+        <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js"></script>
+        <script>
+            const config = { 
+            documentId: '8ef3393d-bd21-4fd6-967e-6bcdeea6e982',
+            themeColor: '#161616',
+            darkMode: true, 
+            };
+            CloudPDF(config, document.getElementById('viewer')).then((instance) => {
+      
+            });
+        </script>
+    </section>
     
     <footer><p class="footer-text">&nbsp; &#169; 2024.Satvik Shankar | All Rights Reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
